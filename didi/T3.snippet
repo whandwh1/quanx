@@ -1,0 +1,22 @@
+#!name = T3出行
+
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/ad\/act\/v1\/notoken\/popup url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/ad\/act\/v1\/notoken\/negativeScreen url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/open-app-api\/api\/intime\/push\/offline\/pull url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/ad\/act\/v1\/notoken\/addressUp url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/open-app-api\/api\/intime\/push\/offline\/pull url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/v1\/ad\/getNotices url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/notoken\/api\/v1\/resource\/getPageSceneListData url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/v1\/resource\/getTripRemind url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/common-app-api\/api\/passenger\/v1\/getCardInfo url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/api\/v3\/resource\/bottom url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-app-api\/notoken\/api\/home\/v\d\/leftmenu url reject-dict
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/solution-passenger-api\/notoken\/trip\/api\/solution\/passenger\/open\/getHomeMenuList url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/didi/T3.js
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/notoken\/api\/v\d\/ad\/getNegativescreen url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/didi/T3.js
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/notoken\/api\/v\d\/ad\/getActivityPopup url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/didi/T3.js
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/notoken\/api\/v\d\/ad\/getNotices url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/didi/T3.js
+^https:\/\/passenger\.t3go\.cn(:\d+)?\/passenger-activity-api\/notoken\/api\/v\d\/resourceLocation\/floating url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/didi/T3.js
+^http:\/\/.+\/resolve url reject
+
+
+hostname = *.t3go.cn,124.71.144.189, 123.60.34.69, 121.36.220.180, 121.37.134.39
