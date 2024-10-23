@@ -417,7 +417,7 @@ http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent scr
 ^https:\/\/api\.zhihu\.com\/commercial_api\/ reject-dict
 
 # 滴滴钱包界面净化
-^https:\/\/mapi\.xiaojukeji\.com\/passenger-wallet\/api\/v6\/wallet\/homepage\? url script-response-body https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/Scripts/didiqb.js
+^https:\/\/mapi\.xiaojukeji\.com\/passenger-wallet\/api\/v6\/wallet\/homepage\? url script-path https://raw.githubusercontent.com/whandwh1/quanx/refs/heads/main/Scripts/didiqb.js
 
 
 [MITM]
